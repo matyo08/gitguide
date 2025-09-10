@@ -16,3 +16,12 @@
     >git commit -m "note"
 - ellenörzés
     >git status
+## Cloud repo
+
+- make new repo on github
+- connect repo:
+    >git remote add origin https://token@github.com/matyo08/gitguide.git
+- first push:
+    > git push -u origin master
+- following pushes:
+    > git push
