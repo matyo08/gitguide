@@ -38,8 +38,8 @@
         let borders = [0,5]
         const change = (a) => {
             
-            (Number(document.querySelector(".nr").textContent)-1 == borders[0] || Number(document.querySelector(".nr").textContent)+1 == borders[1]) ? ((Number(document.querySelector(".nr").textContent) == borders[1]) ? document.querySelector(".up").disabled = true : document.querySelector(".down").disabled = true ) : (document.querySelector(".up").disabled = false , document.querySelector(".down").disabled = false)   
-            document.querySelector(".nr") = Number(document.querySelector(".nr"))+a
+            Number(document.querySelector(".nr").textContent)-1 == borders[0] || Number(document.querySelector(".nr").textContent)+1 == borders[1] ? ((Number(document.querySelector(".nr").textContent)+1 == borders[1]) ? document.querySelector(".up").disabled = true : document.querySelector(".down").disabled = true ) : (document.querySelector(".up").disabled = false , document.querySelector(".down").disabled = false   )
+            document.querySelector(".nr").innerHTML = Number(document.querySelector(".nr").innerHTML)+a
         }    
     </script>
 </body>
